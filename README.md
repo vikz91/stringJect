@@ -49,7 +49,7 @@ new stringJect('./sample.txt','this is bad').deleteUntill('this is done').saveSy
 //INsert after 2 lines of predicate
 new stringJect('./sample.txt','this is good',2).replace('this is better').saveSync();
 
-
+Insert multiple lines by placing \n
 
 ```
 

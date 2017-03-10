@@ -110,11 +110,3 @@ stringJect.prototype.saveSync = function(){
 
 
 exports=module.exports=stringJect;
-
-
-/*
-//Test
-var s=new stringJect('./sample.txt','This is 8th').delete().after('hehehe').saveSync();
-console.log('DONE ',s);
-
-*/
