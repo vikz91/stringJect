@@ -26,7 +26,7 @@ npm i -s stringject
 ## Usage
 
 ```
-var stringJect=require('stringject);
+var stringJect=require('stringjector');
 
 var s = new stringJect('./sample.txt','this is good').replace('this is better').saveSync();
 
