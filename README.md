@@ -68,8 +68,8 @@ new stringJect('./sample.txt','this is bad').deleteUntill('this is done').saveSy
 
 [MIT](http://vjpr.mit-license.org)
 
-[npm-image]: https://img.shields.io/npm/v/live-xxx.svg
-[npm-url]: https://npmjs.org/package/live-xxx
+[npm-image]: https://img.shields.io/npm/vikz91/stringJect.svg
+[npm-url]: https://npmjs.org/package/stringjector
 [travis-image]: https://img.shields.io/travis/vikz91/stringject/master.svg
 [travis-url]: https://travis-ci.org/live-js/live-xxx
 [coveralls-image]: https://img.shields.io/coveralls/live-js/live-xxx/master.svg
