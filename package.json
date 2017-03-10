@@ -1,0 +1,30 @@
+{
+  "name": "stringjector",
+  "version": "1.0.0",
+  "description": "multi-line string manipulation with Fluent style API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikz91/stringJect.git"
+  },
+  "keywords": [
+    "string",
+    "manipulation",
+    "insert",
+    "after",
+    "before",
+    "replace",
+    "delete",
+    "abhishek",
+    "deb"
+  ],
+  "author": "Abhishek Deb (vikz91.deb@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vikz91/stringJect/issues"
+  },
+  "homepage": "https://github.com/vikz91/stringJect#readme"
+}
