@@ -2,11 +2,15 @@ const fs = require('fs');
 
 
 //Init : Reads file and finds predicate. returns null if not found;
-var stringJect=function (filePath,predicate) {
+var stringJect=function (filePath,predicate,offset) {
 	this.filePath=filePath;
 	this.file=fs.readFileSync(filePath).toString().split('\n');
 	this.text='';
 	this.found=-1;
+
+	if(offset===undefined || offset===null || offset===''){
+		offset=0;
+	}
 
 
 	//SEARCH
@@ -21,6 +25,8 @@ var stringJect=function (filePath,predicate) {
 		console.log('Predicate NOT found!. File untouched.');
 		return null;
 	}
+
+	this.found+=offset;
 
 	return this;
 };

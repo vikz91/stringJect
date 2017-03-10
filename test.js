@@ -9,6 +9,7 @@ var passed=0,failed=0;
 //INSERT before
 var str='New before Line';
 
+
 test('insert before',str,()=>{
 	new stringJect('./sample.txt',predicate).before(str).saveSync(); //Actual Write
 });
@@ -40,7 +41,10 @@ testNot('Delete',str,()=>{
 });
 
 
-
+str='Offset workuing';
+test('offset',str,()=>{
+	new stringJect('./sample.txt',predicate,2).after(str).saveSync(); 
+});
 
 
 

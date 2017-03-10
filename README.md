@@ -28,11 +28,11 @@ npm i -s stringject
 ```
 var stringJect=require('stringjector');
 
-var s = new stringJect('./sample.txt','this is good').replace('this is better').saveSync();
+new stringJect('./sample.txt','this is good').replace('this is better').saveSync();
 
 
 //Fluent Style
-var p = new stringJect('./sample.txt','this is bad')
+new stringJect('./sample.txt','this is bad')
             .before('this is better')
             .after('this is worse')
             .replace('confused')
@@ -45,10 +45,16 @@ var e = new stringJect('./sample.txt','this is bad').find(); //returns true/fals
 
 //delete a all lines between :
 new stringJect('./sample.txt','this is bad').deleteUntill('this is done').saveSync(); 
+
+//INsert after 2 lines of predicate
+new stringJect('./sample.txt','this is good',2).replace('this is better').saveSync();
+
+
+
 ```
 
 ## Reference
-1. ``new stringJect(<filePath>,<Predicate to Search>)``
+1. ``new stringJect(<filePath>,<Predicate to Search>,[<Offset line numbers>])``
 2. ``.before(string)``
 3. ``.after(string)``
 4. ``.replace(string)``
@@ -61,7 +67,7 @@ new stringJect('./sample.txt','this is bad').deleteUntill('this is done').saveSy
 
 
 
-``new stringJect()`` constructor takes a file path as first argument and keyword/predicate to search for as seond argument. This return a stringJect object, which can be used to chain other methods upon.
+``new stringJect()`` constructor takes a file path as first argument and keyword/predicate to search for as seond argument. This return a stringJect object, which can be used to chain other methods upon. This optionally takes a third parameter(Number) which is no. of lines to offset.
  
 
 ## License
